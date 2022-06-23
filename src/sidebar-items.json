@@ -12,7 +12,7 @@
     "name": "User Management",
     "key": "component",
     "icon": "stack",
-    "url": "extra-component-avatar.html"
+    "url": "user-management.html"
   },
   {
     "name": "Visitor Management",
