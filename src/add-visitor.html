@@ -1,5 +1,5 @@
-{% set title = 'Add User Management' %}
-{% set filename = 'add-user.html' %}
+{% set title = 'Edit Visitor Management' %}
+{% set filename = 'edit-visitor.html' %}
 
 {% extends 'layouts/master.html' %}
 {% block content %}
@@ -7,15 +7,15 @@
     <div class="page-title">
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>Add new data</h3>
-                <p class="text-subtitle text-muted">Add new data for user</p>
+                <h3>Edit data</h3>
+                <p class="text-subtitle text-muted">Edit data for visitor</p>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="user-management.html">User Management</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Add new data</li>
+                        <li class="breadcrumb-item"><a href="visitor-management.html">Visitor Management</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit data</li>
                     </ol>
                 </nav>
             </div>
@@ -33,55 +33,41 @@
                                 <div class="row">
                                   <div class="col-md-6 col-12">
                                       <div class="form-group has-icon-left">
-                                          <label for="fullname-user">Full Name</label>
+                                          <label for="fullname_visitor">Full Name</label>
                                           <div class="position-relative">
-                                              <input type="text" class="form-control" placeholder="fullname" id="fullname-user">
+                                              <input type="text" class="form-control" placeholder="fullname" id="fullname-visitor">
                                               <div class="form-control-icon">
                                                   <i class="bi bi-people"></i>
                                               </div>
                                           </div>
                                       </div>
                                   </div>
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="guest-type">Guest Type</label>
+                                          <div class="position-relative">
+                                  <!--                                                <input type="drop-down" class="form-control" placeholder="Name" id="role">-->
+                                              <select class="form-control" placeholder="Name" id="guest-type">
+                                                  <option>--Select Lembaga--</option>
+                                                  <option value="volvo">Volvo</option>
+                                                  <option value="saab">Saab</option>
+                                                  <option value="fiat">Fiat</option>
+                                                  <option value="audi">Audi</option>
+                                              </select>
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-person-circle"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
                                     <div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
-                                            <label for="username">Username</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="username" id="username">
-                                                <div class="form-control-icon">
-                                                    <i class="bi bi-person"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                              <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="password">Password</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="passsword" id="password">
-                                                <div class="form-control-icon">
-                                                    <i class="bi bi-lock"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="re-password">Retype password</label>
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control" placeholder="re-password" id="re-password">
-                                                <div class="form-control-icon">
-                                                    <i class="bi bi-lock"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="role">Role</label>
+                                            <label for="asal-lembaga">Asal Lembaga</label>
                                             <div class="position-relative">
                                     <!--                                                <input type="drop-down" class="form-control" placeholder="Name" id="role">-->
-                                                <select class="form-control" placeholder="Name" id="role">
-                                                    <option>--Select Role--</option>
+                                                <select class="form-control" placeholder="Name" id="asal-lembaga">
+                                                    <option>--Select Lembaga--</option>
                                                     <option value="volvo">Volvo</option>
                                                     <option value="saab">Saab</option>
                                                     <option value="fiat">Fiat</option>

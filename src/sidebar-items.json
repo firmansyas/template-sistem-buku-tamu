@@ -18,7 +18,7 @@
     "name": "Visitor Management",
     "key": "component",
     "icon": "stack",
-    "url": "extra-component-divider.html"
+    "url": "visitor-management.html"
   },
   {
     "name": "Guest Type Management",

@@ -1,5 +1,5 @@
-{% set title = 'User Management' %}
-{% set filename = 'user-management.html' %}
+{% set title = 'Visitor Management' %}
+{% set filename = 'visitor-management.html' %}
 
 {% extends 'layouts/master.html' %}
 {% block content %}
@@ -7,14 +7,14 @@
     <div class="page-title">
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
-                <h3>User Management</h3>
-                <p class="text-subtitle text-muted">Manage the users of the system</p>
+                <h3>Visitor Management</h3>
+                <p class="text-subtitle text-muted">Manage the visitors</p>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">User Management</li>
+                        <li class="breadcrumb-item active" aria-current="page">Visitor Management</li>
                     </ol>
                 </nav>
             </div>
@@ -24,7 +24,7 @@
         <div class="card">
             <div class="card-body">
                 <div align="right" style="padding-right:10px">
-                    <a href="add-user.html" class="btn btn-primary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Create New &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                    <a href="add-visitor.html" class="btn btn-primary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Create New &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
                 </div>
                 <br>
 
@@ -32,8 +32,8 @@
                     <thead>
                     <tr>
                         <th>Fullname</th>
-                        <th>Username</th>
-                        <th>Role</th>
+                        <th>Guest Type</th>
+                        <th>Asal Lembaga</th>
                         <th>Created Date</th>
                         <th>Action</th>
                     </tr>
@@ -43,9 +43,9 @@
                       <td style="vertical-align: middle">vehicula.aliquet@semconsequat.co.uk</td>
                         <td style="vertical-align: middle">Graiden</td>
                         <td style="vertical-align: middle">076 4820 8838</td>
-                            <td style="vertical-align: middle">23 July 2022 10:10:08</td>
+                          <td style="vertical-align: middle">23 July 2022 10:00:00</td>
                           <td>
-                            <a href="edit-user.html" class="btn btn-sm btn-dark">Edit</a>
+                            <a href="edit-visitor.html" class="btn btn-sm btn-dark">Edit</a>
                             <a href="#" class="btn btn-sm btn-danger">Delete</a>
                         </td>
                     </tr>
@@ -59,7 +59,6 @@
 {% endblock %}
 {% block styles %}
 <link rel="stylesheet" href="assets/css/pages/simple-datatables.css">
-<link rel="stylesheet" href="assets/scss/pages/datatables.scss">
 {% endblock %}
 {% block js %}
 <script src="assets/js/extensions/simple-datatables.js"></script>
