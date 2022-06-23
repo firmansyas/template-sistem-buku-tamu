@@ -1,5 +1,5 @@
-{% set title = 'Form Layout' %}
-{% set filename = 'form-layout.html' %}
+{% set title = 'Edit User Management' %}
+{% set filename = 'edit-user.html' %}
 
 {% extends 'layouts/master.html' %}
 {% block content %}
@@ -8,14 +8,14 @@
         <div class="row">
             <div class="col-12 col-md-6 order-md-1 order-last">
                 <h3>Add new data</h3>
-                <p class="text-subtitle text-muted">Add new data for user</p>
+                <p class="text-subtitle text-muted">Edit data for user</p>
             </div>
             <div class="col-12 col-md-6 order-md-2 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="user-management.html">User Management</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Add new data</li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit data</li>
                     </ol>
                 </nav>
             </div>
@@ -31,6 +31,17 @@
                         <div class="card-body">
                             <form class="form">
                                 <div class="row">
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="fullname">Full Name</label>
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control" placeholder="fullname" id="fullname">
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-people"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
                                             <label for="username">Username</label>
@@ -42,25 +53,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group has-icon-left">
-                                            <label for="role">Role</label>
-                                            <div class="position-relative">
-<!--                                                <input type="drop-down" class="form-control" placeholder="Name" id="role">-->
-                                                <select class="form-control" placeholder="Name" id="role">
-                                                    <option>--Select Role--</option>
-                                                    <option value="volvo">Volvo</option>
-                                                    <option value="saab">Saab</option>
-                                                    <option value="fiat">Fiat</option>
-                                                    <option value="audi">Audi</option>
-                                                </select>
-                                                <div class="form-control-icon">
-                                                    <i class="bi bi-person-circle"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
+                                                                        <div class="col-md-6 col-12">
                                         <div class="form-group has-icon-left">
                                             <label for="password">Password</label>
                                             <div class="position-relative">
@@ -82,7 +75,24 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="role">Role</label>
+                                            <div class="position-relative">
+                                    <!--                                                <input type="drop-down" class="form-control" placeholder="Name" id="role">-->
+                                                <select class="form-control" placeholder="Name" id="role">
+                                                    <option>--Select Role--</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="fiat">Fiat</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                                <div class="form-control-icon">
+                                                    <i class="bi bi-person-circle"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="form-group col-12">
                                         <div class='form-check'>
                                             <div class="checkbox">

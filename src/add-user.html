@@ -1,0 +1,118 @@
+{% set title = 'Add User Management' %}
+{% set filename = 'add-user.html' %}
+
+{% extends 'layouts/master.html' %}
+{% block content %}
+<div class="page-heading">
+    <div class="page-title">
+        <div class="row">
+            <div class="col-12 col-md-6 order-md-1 order-last">
+                <h3>Add new data</h3>
+                <p class="text-subtitle text-muted">Add new data for user</p>
+            </div>
+            <div class="col-12 col-md-6 order-md-2 order-first">
+                <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="user-management.html">User Management</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Add new data</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- // Basic multiple Column Form section start -->
+    <section id="multiple-column-form">
+        <div class="row match-height">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <form class="form">
+                                <div class="row">
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="fullname">Full Name</label>
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control" placeholder="fullname" id="fullname">
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-people"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="username">Username</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="Name" id="username">
+                                                <div class="form-control-icon">
+                                                    <i class="bi bi-person"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col-md-6 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="password">Password</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="Password" id="password">
+                                                <div class="form-control-icon">
+                                                    <i class="bi bi-lock"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="re-password">Retype password</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control" placeholder="Password" id="re-password">
+                                                <div class="form-control-icon">
+                                                    <i class="bi bi-lock"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group has-icon-left">
+                                            <label for="role">Role</label>
+                                            <div class="position-relative">
+                                    <!--                                                <input type="drop-down" class="form-control" placeholder="Name" id="role">-->
+                                                <select class="form-control" placeholder="Name" id="role">
+                                                    <option>--Select Role--</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="saab">Saab</option>
+                                                    <option value="fiat">Fiat</option>
+                                                    <option value="audi">Audi</option>
+                                                </select>
+                                                <div class="form-control-icon">
+                                                    <i class="bi bi-person-circle"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <div class='form-check'>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="checkbox5" class='form-check-input' checked>
+                                                <label for="checkbox5">Remember Me</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                        <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}
