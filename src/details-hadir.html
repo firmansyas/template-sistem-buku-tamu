@@ -1,0 +1,120 @@
+{% set title = 'Details Hadir Management' %}
+{% set filename = 'details-hadir.html' %}
+
+{% extends 'layouts/master.html' %}
+{% block content %}
+<div class="page-heading">
+    <div class="page-title">
+        <div class="row">
+            <div class="col-12 col-md-6 order-md-1 order-last">
+                <h3>Details Data Kehadiran</h3>
+                <p class="text-subtitle text-muted">Details coming visitor to events</p>
+            </div>
+            <div class="col-12 col-md-6 order-md-2 order-first">
+                <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="absence.html">Absence Management</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Details data</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- // Basic multiple Column Form section start -->
+    <section id="multiple-column-form">
+        <div class="row match-height">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <form class="form">
+                                <div class="row">
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="fullname-visitor">Full Name</label>
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control" placeholder="fullname" id="fullname-visitor" disabled>
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-people"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="asal-lembaga">Asal Lembaga</label>
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control" placeholder="asal-lembaga" id="asal-lembaga" disabled>
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-people"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="guest-type">Guest Type</label>
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control" placeholder="guest-type" id="guest-type" disabled>
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-people"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="waktu-kehadiran">Waktu Kehadiran</label>
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control" placeholder="waktu kehadiran" id="waktu-kehadiran" disabled>
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-people"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="petugas-kehadiran">Petugas Kehadiran</label>
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control" placeholder="petugas kehadiran" id="petugas-kehadiran" disabled>
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-people"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-md-6 col-12">
+                                      <div class="form-group has-icon-left">
+                                          <label for="status-kehadiran">Status Kehadiran</label>
+                                          <div class="position-relative">
+                                              <input type="text" class="form-control" placeholder="status kehadiran" id="status-kehadiran" disabled>
+                                              <div class="form-control-icon">
+                                                  <i class="bi bi-people"></i>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                        <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // Basic multiple Column Form section end -->
+</div>
+{% endblock %}

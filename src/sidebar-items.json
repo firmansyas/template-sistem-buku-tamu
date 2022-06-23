@@ -36,6 +36,6 @@
     "name": "Absence Management",
     "key": "component",
     "icon": "stack",
-    "url": "extra-component-toastify.html"
+    "url": "absence.html"
   }
 ]
